@@ -104,6 +104,12 @@ jobs:
           repository: COMCIFS/MultiBlock_Dictionary
           path: cif-dictionaries/MultiBlock_Dictionary
 
+      - name: Checkout DDLm imgCIF dictionary
+        uses: actions/checkout@v4
+        with:
+            repository: COMCIFS/imgCIF
+            path: cif-dictionaries/imgCIF
+            
       - name: check_ddlm
         uses: COMCIFS/dictionary_check_action@main
         id: ddlm_check
